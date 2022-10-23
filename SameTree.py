@@ -1,11 +1,6 @@
 from collections import deque
 class Solution:
-    def isSameTree(self, p, q):
-        """
-        :type p: TreeNode
-        :type q: TreeNode
-        :rtype: bool
-        """    
+    def isSameTree(self, p, q): 
         def check(p, q):
             # if both are None
             if not p and not q:
