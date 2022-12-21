@@ -1,9 +1,7 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         LEFT_BOUND, RIGHT_BOUND = len(s), len(t)
-
         def rec_isSubsequence(left_index, right_index):
-            # base cases
             if left_index == LEFT_BOUND:
                 return True
             if right_index == RIGHT_BOUND:
